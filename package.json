@@ -13,5 +13,11 @@
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "rollup-plugin-terser": "^7.0.2"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/bundle.cjs",
+      "import": "./dist/bundle.mjs"
+    }
   }
 }
